@@ -1,0 +1,97 @@
+/* Northwood LMS — Material 3 design tokens (light + dark) */
+
+:root {
+  /* Spacing scale (4pt grid, 12–24px rhythm) */
+  --nw-space-1: 4px;
+  --nw-space-2: 8px;
+  --nw-space-3: 12px;
+  --nw-space-4: 16px;
+  --nw-space-5: 20px;
+  --nw-space-6: 24px;
+  --nw-space-8: 32px;
+  --nw-space-10: 40px;
+
+  /* Shape tokens */
+  --nw-shape-xs: 4px;
+  --nw-shape-sm: 8px;
+  --nw-shape-md: 12px;
+  --nw-shape-lg: 16px;
+  --nw-shape-xl: 20px;
+  --nw-shape-2xl: 28px;
+  --nw-shape-full: 999px;
+
+  /* Elevation */
+  --nw-elev-1: 0 1px 2px rgb(0 0 0 / 0.08), 0 1px 3px rgb(0 0 0 / 0.06);
+  --nw-elev-2: 0 1px 3px rgb(0 0 0 / 0.1), 0 4px 8px rgb(0 0 0 / 0.06);
+  --nw-elev-3: 0 4px 8px rgb(0 0 0 / 0.1), 0 8px 16px rgb(0 0 0 / 0.08);
+
+  /* Motion */
+  --nw-motion-fast: 150ms ease;
+  --nw-motion-med: 250ms cubic-bezier(0.2, 0, 0, 1);
+
+  /* ---- Light scheme (default) ---- */
+  --nw-primary: #0b57d0;
+  --nw-on-primary: #ffffff;
+  --nw-primary-container: #d3e3fd;
+  --nw-on-primary-container: #041e49;
+  --nw-secondary: #575e71;
+  --nw-on-secondary: #ffffff;
+  --nw-secondary-container: #dbe2f9;
+  --nw-on-secondary-container: #161b26;
+  --nw-tertiary: #715573;
+  --nw-tertiary-container: #fdd7e4;
+  --nw-on-tertiary-container: #331726;
+  --nw-error: #ba1a1a;
+  --nw-error-container: #ffdad6;
+  --nw-on-error-container: #410002;
+  --nw-surface: #f8fafd;
+  --nw-on-surface: #191c22;
+  --nw-surface-variant: #e1e3e8;
+  --nw-on-surface-variant: #44474e;
+  --nw-surface-container-lowest: #ffffff;
+  --nw-surface-container-low: #f1f4f9;
+  --nw-surface-container: #e9eef6;
+  --nw-surface-container-high: #e3e9f2;
+  --nw-surface-container-highest: #dde3ee;
+  --nw-outline: #74777f;
+  --nw-outline-variant: #c4c6d0;
+
+  /* Pastel accents for course art */
+  --nw-pastel-blue-bg: #d3e3fd;
+  --nw-pastel-blue-fg: #041e49;
+  --nw-pastel-purple-bg: #e8def8;
+  --nw-pastel-purple-fg: #1d1b20;
+  --nw-pastel-orange-bg: #ffdbcb;
+  --nw-pastel-orange-fg: #341100;
+  --nw-pastel-green-bg: #c9f0d4;
+  --nw-pastel-green-fg: #072711;
+  --nw-pastel-red-bg: #ffdad6;
+  --nw-pastel-red-fg: #410002;
+  --nw-pastel-teal-bg: #b8ece3;
+  --nw-pastel-teal-fg: #00201c;
+}
+
+/* ---- Dark scheme ---- */
+.dark {
+  --nw-primary: #a8c7fa;
+  --nw-on-primary: #062e6f;
+  --nw-primary-container: #004a77;
+  --nw-on-primary-container: #d3e3fd;
+  --nw-secondary: #bec6dc;
+  --nw-secondary-container: #3e4759;
+  --nw-on-secondary-container: #dbe2f9;
+  --nw-tertiary: #dfb9c9;
+  --nw-tertiary-container: #5c3a49;
+  --nw-error: #ffb4ab;
+  --nw-error-container: #93000a;
+  --nw-surface: #131314;
+  --nw-on-surface: #e3e3e3;
+  --nw-on-surface-variant: #c4c6d0;
+  --nw-surface-container-lowest: #0e0e0e;
+  --nw-surface-container-low: #1b1c1e;
+  --nw-surface-container: #1f2023;
+  --nw-surface-container-high: #282a2d;
+  --nw-surface-container-highest: #333538;
+  --nw-outline: #8e9099;
+  --nw-outline-variant: #44474e;
+}
