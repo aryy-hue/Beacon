@@ -1,4 +1,4 @@
-# Northwood LMS — Modern School Learning Platform
+# Beacon Learning Management System
 
 Google-style student LMS built with **Vue 3 + TypeScript + Vite + Vuetify 3 (Material 3)**.
 Original design inspired by modern educational dashboards: navigation rail/drawer,
