@@ -1,5 +1,6 @@
 import './styles/tokens.css'
 import './styles/global.css'
+import './styles/animations.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

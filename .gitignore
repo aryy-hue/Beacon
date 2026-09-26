@@ -1,42 +1,115 @@
-# Logs
-logs
+# ---------------------------------------------------------------------------
+# Beacon — ignore rules
+# Anything listed here is never committed. Secrets, credentials, machine-local
+# settings, dependency folders and build/test output stay out of the repository.
+# Only `.env.example` is intentionally whitelisted (see Environment below).
+# ---------------------------------------------------------------------------
+
+# --- Secrets & credentials (never commit) ---------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+secrets.*
+*.secret
+*.token
+credentials.json
+credentials.*.json
+*service-account*.json
+.netrc
+.npmrc
+.yarnrc.yml
+
+# --- Dependencies & package manager caches --------------------------------
+node_modules/
+jspm_packages/
+.pnpm-store/
+.yarn/cache/
+.yarn/install-state.gz
+vendor/
+.npm/
+
+# --- Build output ---------------------------------------------------------
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+.vite/
+.cache/
+
+# --- Local asset downloads (fonts come from the Google Fonts CDN) ---------
+public/fonts/
+
+# --- Test & coverage artifacts --------------------------------------------
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+__screenshots__/
+/cypress/videos/
+/cypress/screenshots/
+
+# --- Logs & debug traces --------------------------------------------------
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*.pid
+*.seed
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
+# --- Local overrides (per-developer tweaks) -------------------------------
 *.local
-
-# Editor directories and files
+.env.local
+.env.*.local
 .vscode/*
 !.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.idea/
+*.iml
+*.ipr
+*.iws
+.fleet/
+.history/
+*.code-workspace
 
-*.tsbuildinfo
+# --- Editor / OS noise ----------------------------------------------------
+*.swp
+*.swo
+*.swn
+*~
+*.bak
+*.orig
+*.rej
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
 
+# --- Temp & scratch -------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.timestamp-*.mjs
+
+# --- Caches ----------------------------------------------------------------
 .eslintcache
-
-# Cypress
-/cypress/videos/
-/cypress/screenshots/
-
-# Vitest
-__screenshots__/
-
-# Vite
-*.timestamp-*-*.mjs
-
-test-results/
-playwright-report/
+.stylelintcache
+.parcel-cache
+.turbo/
